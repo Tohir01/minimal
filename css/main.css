@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Regular.eot');
+    src: url('../fonts/montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/oswald/Oswald-Regular.eot');
+    src: url('../fonts/oswald/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/oswald/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/oswald/Oswald-Regular.woff') format('woff'),
+        url('../fonts/oswald/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto; 
+}
+
+/* Main header sytles */
+.main-header {
+    width: 100%;
+    height: 105px;
+    background-color: #ffffff;
+}
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header__brand  {
+    display: flex;
+    align-items: center;
+}
+
+.main-header__title {
+    text-transform: uppercase;
+    font-size: 1.375rem;
+    font-weight: 400;
+    padding: 1.125rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main-navigation__item {
+    display: inline-block;
+}
+
+.main-navigation__item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #404040;
+    line-height: 105px;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width:1199px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .container {
+        width: 90%;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .main-header__brand  {
+        display: flex;
+        align-items: center;
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .main-header__brand img {
+        width: 55px;
+        height: 60px;
+    }   
+
+    .main-header__title {
+        font-size: 1rem;
+    }
+}
